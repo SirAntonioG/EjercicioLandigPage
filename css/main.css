@@ -1,0 +1,40 @@
+
+
+#hero {
+    background-image: url('/img/chicaLentes.svg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.uppercase {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    /* identical to box height, or 130% */
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-feature-settings: 'liga' off;
+    color: #505A5B;
+}
+.title {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 73px;
+    /* or 130% */
+    font-feature-settings: 'liga' off;
+    color: #505A5B;
+}
+.description {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    /* or 167% */
+    font-feature-settings: 'liga' off;
+    color: #333333;
+}
