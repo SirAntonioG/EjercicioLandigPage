@@ -8,25 +8,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <title>Homepage</title>
 </head>
 <body>
-    <nav class="navbar">
-        <a href="#">La nostra storia</a>
-        <a href="#">Ottica</a>
-        <a href="#">Visite oculistiche</a>
-        <button class="navbar-button">Vieni a trovarci</button>
+    <nav id="navbar">
+        <div class="navbar-content">
+            <a class="storia-anchor" href="#storia">La nostra storia</a>
+            <a href="#ottica">Ottica</a>
+            <a href="#visitia">Visite oculistiche</a>
+            <button class="navbar-button">Vieni a trovarci</button>
+        </div>
     </nav>
 
     <main>
-        <div id="hero">
-            <div>
-                <p>Ottica Rubele</p>
-                <p>Occhiali come non ne hai mai visti</p>
+        <section id="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <p class="title">Ottica Rubele</p>
+                    <p class="description">Occhiali come <br>non ne hai mai visti</p>
+                </div>
             </div>
-        </div>
-        <div id="storia">
+        </section>
+        <section id="storia">
             <div class="storia-content">
                 <img src="/img/national-cancer-institute.svg" alt="">
                 <div class="content">
@@ -37,8 +41,8 @@
                     </p>
                 </div>
             </div>
-        </div>
-        <div id="ottica">
+        </section>
+        <section id="ottica">
             <div id="ottica-content">
                 <div class="content">
                     <p class="uppercase">passione mai vista prima</p>
@@ -57,8 +61,8 @@
                     <img src="/img/vector4.svg" alt="">
                 </div>
             </div>
-        </div>
-        <div id="visitia">
+        </section>
+        <section id="visitia">
             <div class="visitia-content">
                 <img src="/img/imgVisitia.svg" alt="" class="visitia-img">
                 <div class="content">
@@ -72,7 +76,7 @@
                     <button class="button-visitia">Prenota una visita</button>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>

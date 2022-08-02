@@ -1,10 +1,114 @@
-
+body {
+    margin: 0;
+    background: #EFF1ED;
+}
+nav {
+    margin: 0;
+    position: fixed;
+}
+#navbar {
+    background: #EFF1ED;
+    padding: 16px 250px;
+    box-shadow: 0px 0px 8px rgba(80, 90, 91, 0.2);
+}
+.navbar-content {
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 64px;
+}
+#navbar .navbar-content a {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+    color: #505A5B;
+    text-decoration: none;
+}
+#navbar .navbar-content .storia-anchor {
+    text-decoration-line: underline;
+    color: #D36060;
+}
+button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px 32px;
+    gap: 10px;
+    background: #505A5B;
+    border-radius: 8px;
+    border: none;
+}
+.navbar-button{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+    color: #E8EBE4;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
 
 #hero {
+    padding-top: 93px;
+}
+.hero-container {
     background-image: url('/img/chicaLentes.svg');
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
+    background-attachment:inherit;
+    /* background-size: 100% 100%; */
+    display: flex;
+    justify-content:flex-end;
+    margin:0;
+    padding: 160px 0px 160px 120px;
+}
+
+.hero-content {
+    width: 507px;
+    display: flex;
+    flex-direction: column;
+}
+.hero-content .title {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 120px;
+    line-height: 156px;
+    /* or 130% */
+    letter-spacing: 0.02em;
+    font-feature-settings: 'ordn' on, 'liga' off;
+    color: #EFF1ED;
+    margin-bottom: 0;
+}
+.hero-content .description {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    /* or 130% */
+    color: #EFF1ED;
+}
+
+
+.storia-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 156px 234px 12px 135px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    justify-content: center;
 }
 .uppercase {
     font-family: 'Inter';
@@ -17,6 +121,7 @@
     text-transform: uppercase;
     font-feature-settings: 'liga' off;
     color: #505A5B;
+    margin: 10px 0;
 }
 .title {
     font-family: 'Playfair Display';
@@ -27,6 +132,7 @@
     /* or 130% */
     font-feature-settings: 'liga' off;
     color: #505A5B;
+    margin: 10px 0;
 }
 .description {
     font-family: 'Inter';
@@ -37,4 +143,5 @@
     /* or 167% */
     font-feature-settings: 'liga' off;
     color: #333333;
+    margin: 10px 0;   
 }
