@@ -60,7 +60,7 @@ nav {
     color: #EFF1ED;
 }
 .hero-container .description {
-    font-weight: 400;
+    font-weight: 200;
     font-size: 16pt;
     color: #EFF1ED;
 }
@@ -133,3 +133,34 @@ nav {
 }
 
 /* End Ottica */
+
+/* Footer */
+
+/* End FOOTER */
+
+/* Media Queries */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #hero .hero-container {
+        transform: translateX(15%) translateY(-50%);
+        gap: 0.8rem;
+    }
+    .hero-container .title {
+        font-size: 60pt;
+        line-height: 110%;
+    }
+    .hero-container .description {
+        font-size: 20pt;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+}
+/* End Media Queries */
