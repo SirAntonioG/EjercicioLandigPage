@@ -1,68 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' type='text/css' media='screen' href='/css/main.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
     <title>Homepage</title>
 </head>
+
 <body>
-    <nav id="navbar">
-        <div class="navbar-content">
-            <a class="storia-anchor" href="#storia">La nostra storia</a>
+    <!-- <nav id="navbar">
+        <div class="navbar-container">
+            <a class="nostra-storia-anchor" href="#storia">La nostra storia</a>
             <a href="#ottica">Ottica</a>
             <a href="#visitia">Visite oculistiche</a>
             <button class="navbar-button">Vieni a trovarci</button>
         </div>
-    </nav>
+    </nav> -->
 
     <main>
         <section id="hero">
+            <img src="./img/chicaLentes.svg" alt="Ottica" />
             <div class="hero-container">
-                <div class="hero-content">
-                    <p class="title">Ottica Rubele</p>
-                    <p class="description">Occhiali come <br>non ne hai mai visti</p>
-                </div>
+                <h1 class="title">Ottica Rubele</h1>
+                <p class="description">Occhiali come <br />non ne hai mai visti</p>
             </div>
         </section>
         <section id="storia">
-            <div class="storia-content">
-                <img src="/img/national-cancer-institute.svg" alt="">
-                <div class="content">
+            <div class="storia-container">
+                <div class="storia-img">
+                    <img src="/img/national-cancer-institute.svg" alt="storia" />
+                </div>
+                <div class="storia-content">
                     <p class="uppercase">passione mai vista prima</p>
-                    <p class="title">Una storia che merita di essere raccontata</p>
+                    <h2 class="title">Una storia che merita di essere raccontata</h2>
                     <p class="description">
-                        Presente sul territorio da più di 40 anni, la passione e dedizione verso il nostro lavoro ci ha permesso di nullam id dolor id nibh ultricies vehicula ut id elit. Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. 
+                        Presente sul territorio da più di 40 anni, la passione e dedizione
+                        verso il nostro lavoro ci ha permesso di nullam id dolor id nibh
+                        ultricies vehicula ut id elit. Donec sed odio dui. Nullam quis
+                        risus eget urna mollis ornare vel eu leo. Praesent commodo cursus
+                        magna, vel scelerisque nisl consectetur et.
                     </p>
                 </div>
             </div>
         </section>
         <section id="ottica">
-            <div id="ottica-content">
-                <div class="content">
-                    <p class="uppercase">passione mai vista prima</p>
-                    <p class="title">La nostra Ottica</p>
+            <div class="ottica-container">
+                <div class="ottica-img">
+                    <img src="./img/imgOttica.svg" alt="lentesOttica">
+                </div>
+                <div class="ottica-content">
+                    <p class="uppercase">tornerai per forza</p>
+                    <h2 class="title">La nostra Ottica</h2>
                     <p class="description">
                         Con più di 37 famosi brand e con 12 marchi provenienti da Ottiche artigianali del territitorio siamo una delle realtà locali più fornite. I nostri professionisti ti aiuteranno a trovare la montattura più adatta alle tue esigneze sapendo accontentare anche gli occhi più attenti.
                     </p>
                 </div>
-            </div>
-            <div class="ottica-brand">
-                <p class="ottica-brand-text">Tra i marchi più famosi troverai</p>
-                <div class="ottica-brand-content">
-                    <img src="/img/vector1.svg" alt="">
-                    <img src="/img/vector2.svg" alt="">
-                    <img src="/img/vector3.svg" alt="">
-                    <img src="/img/vector4.svg" alt="">
+            
+                <div class="ottica-brand">
+                    <p class="title">Tra i marchi più famosi troverai</p>
+                    <div class="ottica-brand-content">
+                        <img src="/img/vector1.svg" alt="Logo RayBan">
+                        <img src="/img/vector2.svg" alt="Logo Moscot">
+                        <img src="/img/vector3.svg" alt="Logo Tom Ford">
+                        <img src="/img/vector4.svg" alt="Logo oliver peoples">
+                    </div>
                 </div>
             </div>
         </section>
-        <section id="visitia">
+        <!-- <section id="visitia">
             <div class="visitia-content">
                 <img src="/img/imgVisitia.svg" alt="" class="visitia-img">
                 <div class="content">
@@ -76,10 +89,10 @@
                     <button class="button-visitia">Prenota una visita</button>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
 
-    <footer>
+    <!-- <footer>
         <div class="footer-content">
             <div>
                 <a href="#" class="">Ottica Rubele</a>
@@ -99,6 +112,7 @@
             </div>
         </div>
         <p class="footer-copyright">© Ottica Ruble • C.F. e P. IVA 00488190227 • Credits Michael Martinelli</p>
-    </footer>
+    </footer> -->
 </body>
+
 </html>

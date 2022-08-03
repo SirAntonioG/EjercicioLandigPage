@@ -1,9 +1,12 @@
-body {
+* {
     margin: 0;
+    padding: 0;
+}
+body {
     background: #EFF1ED;
 }
+
 nav {
-    margin: 0;
     position: fixed;
 }
 #navbar {
@@ -102,8 +105,9 @@ main {
 .storia-content {
     display: flex;
     justify-content: space-between;
-    padding: 156px 234px 12px 135px;
+    padding: 156px 234px 120px 135px;
 }
+
 .content {
     display: flex;
     flex-direction: column;
@@ -121,7 +125,6 @@ main {
     text-transform: uppercase;
     font-feature-settings: 'liga' off;
     color: #505A5B;
-    margin: 10px 0;
 }
 .title {
     font-family: 'Playfair Display';
@@ -132,7 +135,7 @@ main {
     /* or 130% */
     font-feature-settings: 'liga' off;
     color: #505A5B;
-    margin: 10px 0;
+    margin-top: 16px;
 }
 .description {
     font-family: 'Inter';
@@ -143,5 +146,64 @@ main {
     /* or 167% */
     font-feature-settings: 'liga' off;
     color: #333333;
-    margin: 10px 0;   
+    margin-top: 32px;   
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .storia-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .storia-content .content {
+        margin-left: 0;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .storia-content {
+        padding: 3rem;
+    }
+    .storia-content img {
+        max-width: 50%;
+        height: auto;
+    }
+    .content {
+        margin-left: 1.5rem;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .storia-content {
+        padding: 3rem;
+    }
+    .content {
+        margin-left: 1.5rem;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .storia-content {
+        padding: 5rem;
+    }
+    .content {
+        margin-left: 3rem;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .storia-content {
+        padding: 156px 135px 120px 135px;
+    }
+    
+    .content {
+        margin-left: 119px;  
+    }
+}
+
