@@ -2,47 +2,56 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     background: #EFF1ED;
 }
+
 img {
     width: 100%;
     height: auto;
 }
+
 .uppercase {
     font-family: 'Inter';
     font-style: normal;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 13px;
+    font-size: 10pt;
     line-height: 23px;
 }
+
 .title {
     font-family: 'Playfair Display';
     font-style: normal;
     font-weight: 900;
-    font-size: 30px;
+    font-size: 22pt;
 }
-.description{
+
+.description {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 14pt;
 }
+
 /* navbar */
 nav {
     position: fixed;
 }
+
 #navbar {
     display: flex;
 
 }
+
 /* End navbar */
 
 /* Hero */
 #hero {
     position: relative;
 }
+
 #hero .hero-container {
     position: absolute;
     top: 50%;
@@ -59,36 +68,48 @@ nav {
     letter-spacing: 0.03em;
     color: #EFF1ED;
 }
+
 .hero-container .description {
     font-weight: 200;
     font-size: 16pt;
     color: #EFF1ED;
 }
+
 /* End Hero */
 
 /* Storia */
 #storia {
     padding: 24px 24px;
 }
+
 .storia-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
+
+.storia-img {
+    border-radius: 12px;
+}
+
 .storia-content {
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
 }
-.storia-content .uppercase{
+
+.storia-content .uppercase {
     color: #505A5B;
 }
+
 .storia-content .title {
     color: #505A5B;
 }
+
 .storia-content .description {
     color: #333333;
 }
+
 /* End Storia */
 
 /* Ottica */
@@ -96,36 +117,44 @@ nav {
     padding: 24px 24px;
     background: #505A5B;
 }
+
 .ottica-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
+
 .ottica-content {
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
 }
-.ottica-content .uppercase{
+
+.ottica-content .uppercase {
     color: #E8EBE4;
 }
+
 .ottica-content .title {
     color: #EFF1ED;
 }
-.ottica-content .description{
+
+.ottica-content .description {
     color: #E8EBE4;
 }
+
 .ottica-brand {
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
 }
+
 .ottica-brand .title {
-    font-size:15px;
+    font-size: 15px;
     line-height: 42px;
     text-align: center;
     color: #EFF1ED;
 }
+
 .ottica-brand-content {
     display: flex;
     align-content: center;
@@ -141,54 +170,159 @@ nav {
 /* Media Queries */
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+
+    .uppercase {
+        font-size: 12pt;
+    }
+    .title {
+        font-size: 24pt;
+    }
+    .description {
+        font-size: 16pt;
+    }
     /* Hero */
     #hero .hero-container {
         transform: translateX(15%) translateY(-50%);
         gap: 0.8rem;
     }
+
     .hero-container .title {
         font-size: 60pt;
         line-height: 110%;
     }
+
     .hero-container .description {
         font-size: 20pt;
     }
+
     /* End Hero */
+
+    /* Storia */
+    
+    #storia {
+        padding: 34px 34px;
+    }
+
+    .storia-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .storia-img {
+        width: 45%;
+    }
+
+    .storia-content {
+        width: 45%;
+        gap: 0.6rem;
+    }
+    /* End Storia */
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+
+    .uppercase {
+        font-size: 14pt;
+        letter-spacing: 0.1em;
+    }
+
+    .title {
+        font-size: 26pt;
+    }
+
+    .description {
+        font-size: 18pt;
+    }
+
     /* Hero */
     #hero .hero-container {
         transform: translateX(15%) translateY(-55%);
         gap: 0.8rem;
     }
+
     .hero-container .title {
         font-size: 75pt;
         line-height: 120%;
     }
+
     .hero-container .description {
         font-size: 25pt;
     }
     /* End Hero */
+
+    /* Storia */
+    #storia {
+        padding: 90px 110px;
+    }
+
+    .storia-container {
+        gap: 70px;
+    }
+
+    .storia-img {
+        width: 45%;
+    }
+
+    .storia-content {
+        gap: 0.7rem;
+    }
+    /* End Storia */
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+
+    .uppercase {
+        font-size: 14pt;
+    }
+
+    .title {
+        font-size: 42pt;
+    }
+
+    .description {
+        font-size: 18pt;
+    }
+
     /* Hero */
     #hero .hero-container {
         transform: translateX(15%) translateY(-60%);
         gap: 0.9rem;
     }
+
     .hero-container .title {
-        font-weight:800;
+        font-weight: 800;
         font-size: 90pt;
         line-height: 130%;
     }
+
     .hero-container .description {
         font-size: 30pt;
         line-height: 130%;
     }
+
     /* End Hero */
+
+    /* Storia */
+    #storia {
+        padding: 130px 180px;
+    }
+
+    .storia-container {
+        gap: 90px;
+    }
+
+    .storia-img {
+        width: 45%;
+    }
+
+    .storia-content {
+        gap: 0.8rem;
+    }
+    /* End Storia */
 }
+
 /* End Media Queries */
