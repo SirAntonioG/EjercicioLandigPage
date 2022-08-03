@@ -85,6 +85,8 @@ nav {
 .storia-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
 }
 
@@ -123,7 +125,13 @@ nav {
     flex-direction: column;
     gap: 20px;
 }
-
+.ottica-img-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
 .ottica-content {
     display: flex;
     flex-direction: column;
@@ -157,17 +165,23 @@ nav {
 
 .ottica-brand-content {
     display: flex;
-    align-content: center;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
-
+.ottica-brand-content div {
+    display: flex;
+    align-items: center;
+}
 /* End Ottica */
 
 /* Footer */
 
 /* End FOOTER */
 
-/* Media Queries */
+
+
+/* MEDIA QUERIES */
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
@@ -205,8 +219,6 @@ nav {
 
     .storia-container {
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
         gap: 50px;
     }
 
@@ -219,6 +231,38 @@ nav {
         gap: 0.6rem;
     }
     /* End Storia */
+
+    /* Ottica */
+    #ottica {
+        padding: 34px 34px;
+    }
+    .ottica-container {
+        gap: 50px;
+    }
+    .ottica-img-content {
+        flex-direction: row;
+        gap: 50px
+    }
+    .ottica-img{
+        width: 45%;
+    }
+    .ottica-content {
+        width: 45%;
+        gap: 0.6rem;
+    }
+
+    .ottica-brand {
+        gap: 0.6rem;
+    }
+
+    .ottica-brand .title {
+        font-size: 20px;
+    }
+
+    .ottica-brand-content {
+        gap: 3rem;
+    }
+    /* End Ottica */
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -262,14 +306,39 @@ nav {
         gap: 70px;
     }
 
-    .storia-img {
-        width: 45%;
-    }
-
     .storia-content {
         gap: 0.7rem;
     }
     /* End Storia */
+
+    /* Ottica */
+    #ottica {
+        padding: 90px 110px;
+    }
+    .ottica-container {
+        gap: 60px;
+    }
+    .ottica-img-content {
+        flex-direction: row;
+        gap: 70px
+    }
+
+    .ottica-content {
+        gap: 0.7rem;
+    }
+
+    .ottica-brand {
+        gap: 0.7rem;
+    }
+
+    .ottica-brand .title {
+        font-size: 21px;
+    }
+
+    .ottica-brand-content {
+        gap: 3.5rem;
+    }
+    /* End Ottica */
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -303,7 +372,6 @@ nav {
         font-size: 30pt;
         line-height: 130%;
     }
-
     /* End Hero */
 
     /* Storia */
@@ -315,14 +383,39 @@ nav {
         gap: 90px;
     }
 
-    .storia-img {
-        width: 45%;
-    }
-
     .storia-content {
         gap: 0.8rem;
     }
     /* End Storia */
+
+    /* Ottica */
+    #ottica {
+        padding: 130px 180px;
+    }
+    .ottica-container {
+        gap: 70px;
+    }
+    .ottica-img-content {
+        flex-direction: row;
+        gap: 90px
+    }
+
+    .ottica-content {
+        gap: 0.8rem;
+    }
+
+    .ottica-brand {
+        gap: 0.8rem;
+    }
+
+    .ottica-brand .title {
+        font-size: 22px;
+    }
+
+    .ottica-brand-content {
+        gap: 4rem;
+    }
+    /* End Ottica */
 }
 
 /* End Media Queries */
