@@ -141,6 +141,7 @@ nav {
 /* Media Queries */
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+    /* Hero */
     #hero .hero-container {
         transform: translateX(15%) translateY(-50%);
         gap: 0.8rem;
@@ -152,15 +153,42 @@ nav {
     .hero-container .description {
         font-size: 20pt;
     }
+    /* End Hero */
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    
+    /* Hero */
+    #hero .hero-container {
+        transform: translateX(15%) translateY(-55%);
+        gap: 0.8rem;
+    }
+    .hero-container .title {
+        font-size: 75pt;
+        line-height: 120%;
+    }
+    .hero-container .description {
+        font-size: 25pt;
+    }
+    /* End Hero */
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    
+    /* Hero */
+    #hero .hero-container {
+        transform: translateX(15%) translateY(-60%);
+        gap: 0.9rem;
+    }
+    .hero-container .title {
+        font-weight:800;
+        font-size: 90pt;
+        line-height: 130%;
+    }
+    .hero-container .description {
+        font-size: 30pt;
+        line-height: 130%;
+    }
+    /* End Hero */
 }
 /* End Media Queries */
