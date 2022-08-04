@@ -12,6 +12,20 @@ img {
     height: auto;
 }
 
+button {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12pt;
+    color: #E8EBE4;
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    background: #505A5B;
+    border-radius: 8px;
+    border: none;
+}
+
 .uppercase {
     font-family: 'Inter';
     font-style: normal;
@@ -19,6 +33,7 @@ img {
     font-weight: 700;
     font-size: 10pt;
     line-height: 23px;
+    color: #505A5B;
 }
 
 .title {
@@ -26,6 +41,7 @@ img {
     font-style: normal;
     font-weight: 900;
     font-size: 22pt;
+    color: #505A5B;
 }
 
 .description {
@@ -33,6 +49,7 @@ img {
     font-style: normal;
     font-weight: 400;
     font-size: 14pt;
+    color: #333333;
 }
 
 /* navbar */
@@ -100,18 +117,6 @@ nav {
     gap: 0.3rem;
 }
 
-.storia-content .uppercase {
-    color: #505A5B;
-}
-
-.storia-content .title {
-    color: #505A5B;
-}
-
-.storia-content .description {
-    color: #333333;
-}
-
 /* End Storia */
 
 /* Ottica */
@@ -125,6 +130,7 @@ nav {
     flex-direction: column;
     gap: 20px;
 }
+
 .ottica-img-content {
     display: flex;
     flex-direction: column;
@@ -132,6 +138,7 @@ nav {
     align-items: center;
     gap: 0.8rem;
 }
+
 .ottica-content {
     display: flex;
     flex-direction: column;
@@ -169,11 +176,43 @@ nav {
     flex-wrap: wrap;
     gap: 2rem;
 }
+
 .ottica-brand-content div {
     display: flex;
     align-items: center;
 }
+
 /* End Ottica */
+
+/* Visitia */
+#visitia {
+    padding: 24px 24px;
+}
+
+.visitia-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.visita-img {
+    border-radius: 12px;
+}
+
+.visitia-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.button-visitia-container {
+    margin-top: 15px;
+}
+
+/* End Visitia */
+
 
 /* Footer */
 
@@ -184,16 +223,22 @@ nav {
 /* MEDIA QUERIES */
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
+    button {
+        font-size: 14pt;
+        padding: 15px 15px;
+    }
     .uppercase {
         font-size: 12pt;
     }
+
     .title {
         font-size: 24pt;
     }
+
     .description {
         font-size: 16pt;
     }
+
     /* Hero */
     #hero .hero-container {
         transform: translateX(15%) translateY(-50%);
@@ -212,7 +257,7 @@ nav {
     /* End Hero */
 
     /* Storia */
-    
+
     #storia {
         padding: 34px 34px;
     }
@@ -230,22 +275,27 @@ nav {
         width: 45%;
         gap: 0.6rem;
     }
+
     /* End Storia */
 
     /* Ottica */
     #ottica {
         padding: 34px 34px;
     }
+
     .ottica-container {
         gap: 50px;
     }
+
     .ottica-img-content {
         flex-direction: row;
         gap: 50px
     }
-    .ottica-img{
+
+    .ottica-img {
         width: 45%;
     }
+
     .ottica-content {
         width: 45%;
         gap: 0.6rem;
@@ -262,12 +312,36 @@ nav {
     .ottica-brand-content {
         gap: 3rem;
     }
+
     /* End Ottica */
+
+    /* Visitia */
+    #visitia {
+        padding: 34px 34px;
+    }
+
+    .visitia-container {
+        gap: 50px;
+    }
+
+    .visitia-content {
+        width: 45%;
+        gap: 0.6rem;
+    }
+
+    .button-visitia-container {
+        margin-top: 15px;
+    }
+    /* End Visitia */
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
+    button {
+        font-size: 16pt;
+        padding: 15px 20px;
+    }
     .uppercase {
         font-size: 14pt;
         letter-spacing: 0.1em;
@@ -315,9 +389,11 @@ nav {
     #ottica {
         padding: 90px 110px;
     }
+
     .ottica-container {
         gap: 60px;
     }
+
     .ottica-img-content {
         flex-direction: row;
         gap: 70px
@@ -339,11 +415,33 @@ nav {
         gap: 3.5rem;
     }
     /* End Ottica */
+
+    /* Visitia */
+    #visitia {
+        padding: 90px 110px;
+    }
+
+    .visitia-container {
+        gap: 70px;
+    }
+
+    .visitia-content {
+        width: 55%;
+        gap: 0.7rem;
+    }
+
+    .button-visitia-container {
+        margin-top: 20px;
+    }
+    /* End Visitia */
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-
+    button {
+        font-size: 18pt;
+        padding: 20px 32px;
+    }
     .uppercase {
         font-size: 14pt;
     }
@@ -372,6 +470,7 @@ nav {
         font-size: 30pt;
         line-height: 130%;
     }
+
     /* End Hero */
 
     /* Storia */
@@ -386,15 +485,18 @@ nav {
     .storia-content {
         gap: 0.8rem;
     }
+
     /* End Storia */
 
     /* Ottica */
     #ottica {
         padding: 130px 180px;
     }
+
     .ottica-container {
         gap: 70px;
     }
+
     .ottica-img-content {
         flex-direction: row;
         gap: 90px
@@ -416,6 +518,24 @@ nav {
         gap: 4rem;
     }
     /* End Ottica */
+
+    /* Visitia */
+    #visitia {
+        padding: 130px 180px;
+    }
+
+    .visitia-container {
+        gap: 80px;
+    }
+
+    .visitia-content {
+        gap: 0.8rem;
+    }
+
+    .button-visitia-container {
+        margin-top: 35px;
+    }
+    /* End Visitia */
 }
 
 /* End Media Queries */
