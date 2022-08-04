@@ -12,6 +12,16 @@ img {
     height: auto;
 }
 
+a {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12pt;
+    line-height: 29px;
+    color: #505A5B;
+    text-decoration: none;
+}
+
 button {
     font-family: 'Inter';
     font-style: normal;
@@ -210,12 +220,51 @@ nav {
 .button-visitia-container {
     margin-top: 15px;
 }
-
 /* End Visitia */
 
 
 /* Footer */
-
+.footer-container{
+    padding: 24px 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10pt;
+    line-height: 21px;
+    color: #E8EBE4;
+    background: #505A5B;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+.footer-links {
+    display: flex;
+    flex-direction: column;
+}
+.footer-links .footer-link-hero {
+    font-size: 12pt;
+    line-height: 30px;
+}
+.footer-links a {
+    font-size: 9pt;
+    font-weight: 300;
+    line-height: 20px;
+    color: #E8EBE4;
+}
+.footer-indicazioni a {
+    color: #E8EBE4;
+    font-weight: 300;
+    font-size: 10pt;
+}
+.footer-copyright {
+    text-align: center;
+}
 /* End FOOTER */
 
 
@@ -536,6 +585,10 @@ nav {
         margin-top: 35px;
     }
     /* End Visitia */
+
+
+
+
 }
 
 /* End Media Queries */
